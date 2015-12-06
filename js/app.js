@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var jsElement = $('#js');
 for(i = 1; i <= 15; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
@@ -45,3 +46,51 @@ for(i = 1; i <= 15; i++) {
 
 
 
+=======
+// Fizzbuzz Refactor
+
+var number = parseInt(prompt("Please enter a number:"));
+  while (isNaN(number)) {
+    number = parseInt(prompt("Please try again:"));
+  } 
+
+function fizzbuzz(num) {
+
+  for (i = 1; i <= num; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      console.log("Fizzbuzz!");
+    }
+    else if (i % 3 == 0) {
+      console.log("Fizz");
+    }
+    else if (i % 5 == 0) {
+      console.log("Buzz");
+    } else {
+        console.log(i);
+      }
+  }
+}
+
+fizzbuzz(number);
+
+// Multiple Fizzbuzz Printers
+
+
+
+/* Original Fizzbuzz
+
+for (i = 1; i <= 15; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+     console.log("Fizzbuzz!");
+   }
+   else if (i % 3 == 0) {
+     console.log("Fizz");
+   }
+   else if (i % 5 == 0) {
+     console.log("Buzz");
+   } else {
+       console.log(i);
+      }
+  }
+*/
+>>>>>>> 5b3ef021e9ce85a75422b2aedf950bd0a83fc977
